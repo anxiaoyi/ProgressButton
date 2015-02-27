@@ -66,11 +66,7 @@ public class ProgressButton extends View {
 		initResources(attrs, defStyleAttr);
 	}
 
-	private void initResources(AttributeSet attrs, int defStyleAttr) {
-		if(isInEditMode()){
-			return;
-		}
-		
+	private void initResources(AttributeSet attrs, int defStyleAttr) {		
 		final TypedArray attributes = getContext().getTheme()
 				.obtainStyledAttributes(attrs, R.styleable.ProgressButton,
 						defStyleAttr, 0);
@@ -99,6 +95,8 @@ public class ProgressButton extends View {
 		cornerRadius = (int) attributes.getDimension(R.styleable.ProgressButton_corner_radius, DEFAULT_CORNER_RADIUS);
 		text = attributes.getString(R.styleable.ProgressButton_text);
 		drawBorder = attributes.getBoolean(R.styleable.ProgressButton_draw_border, true);
+		
+		attributes.recycle();
 
 		mSuggestedMinimumHeight = 20;
 		mSuggestedMinimumWidth = 100;
