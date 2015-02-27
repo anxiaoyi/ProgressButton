@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressButton">
+        <attr name="progress_ratio" format="float"/>
+
+        <attr name="progress_unreached_color" format="color|reference"/>
+        <attr name="progress_reached_color" format="color|reference"/>
+        
+        <attr name="progress_unfinished_pressed_color" format="color|reference" />
+        <attr name="progress_finished_pressed_color" format="color|reference" />
+
+        <attr name="text_size" format="dimension|reference" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="text" format="string|reference" />
+        
+        <attr name="corner_radius" format="dimension|reference" />
+        <attr name="draw_border" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="Themes">
+        <attr name="ProgressButtonStyle" format="reference"/>
+    </declare-styleable>
+</resources>

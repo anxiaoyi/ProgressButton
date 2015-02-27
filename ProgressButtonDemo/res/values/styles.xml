@@ -1,0 +1,92 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Blue -->
+    <style name="ProgressButton">
+        <item name="progress_ratio">0.2</item>
+        <item name="progress_unreached_color">@android:color/transparent</item>
+        <item name="progress_reached_color">#33b5e5</item>
+        <item name="progress_finished_pressed_color">#0099cc</item>
+        <item name="progress_unfinished_pressed_color">#f2f2f2</item>
+        <item name="text_size">20sp</item>
+        <item name="text_color">@android:color/white</item>
+        <item name="corner_radius">0dp</item>
+    </style>
+
+    <!-- Green -->
+    <style name="ProgressButton_Green" parent="ProgressButton">
+        <item name="progress_ratio">0.4</item>
+        <item name="progress_reached_color">#99cc00</item>
+        <item name="progress_finished_pressed_color">#669900</item>
+    </style>
+
+    <!-- Purple -->
+    <style name="ProgressButton_Purple" parent="ProgressButton">
+        <item name="progress_ratio">0.6</item>
+        <item name="progress_reached_color">#aa66cc</item>
+        <item name="progress_finished_pressed_color">#9933cc</item>
+    </style>
+
+    <!-- Yellow -->
+    <style name="ProgressButton_Yellow" parent="ProgressButton">
+        <item name="progress_ratio">0.8</item>
+        <item name="progress_reached_color">#ffbb33</item>
+        <item name="progress_finished_pressed_color">#ff8800</item>
+    </style>
+
+    <!-- Red -->
+    <style name="ProgressButton_Red" parent="ProgressButton">
+        <item name="progress_ratio">1.0</item>
+        <item name="progress_reached_color">#ff4444</item>
+        <item name="progress_finished_pressed_color">#cc0000</item>
+    </style>
+
+    <!-- Red With Text -->
+    <style name="ProgressButton_Red_With_Text" parent="ProgressButton">
+        <item name="progress_ratio">0.0</item>
+        <item name="text_size">20sp</item>
+        <item name="text">Begin Download</item>
+        <item name="text_color">#0099cc</item>
+        <item name="progress_reached_color">#ff4444</item>
+        <item name="progress_finished_pressed_color">#cc0000</item>
+    </style>
+
+    <!-- Red With Green -->
+    <style name="ProgressButton_Red_With_Green" parent="ProgressButton">
+        <item name="progress_ratio">0.2</item>
+        <item name="text_size">20sp</item>
+        <item name="text">Begin Download</item>
+        <item name="progress_reached_color">#ff4444</item>
+        <item name="progress_finished_pressed_color">#cc0000</item>
+        <item name="progress_unreached_color">#99cc00</item>
+        <item name="progress_unfinished_pressed_color">#669900</item>
+        <item name="draw_border">false</item>
+    </style>
+
+    <!-- Red With Corner -->
+    <style name="ProgressButton_Red_With_Corner" parent="ProgressButton">
+        <item name="progress_ratio">0.5</item>
+        <item name="text_size">20sp</item>
+        <item name="text">Downloading...</item>
+        <item name="progress_reached_color">#ff4444</item>
+        <item name="progress_finished_pressed_color">#cc0000</item>
+        <item name="corner_radius">10dp</item>
+    </style>
+
+</resources>

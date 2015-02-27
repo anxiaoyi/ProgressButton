@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pb="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.zk.progressbutton.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn1"
+            style="@style/ProgressButton"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:clickable="true"
+            android:onClick="onBlueProgressBtnClicked" />
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn2"
+            style="@style/ProgressButton_Green"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onGreenProgressBtnClicked" />
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn3"
+            style="@style/ProgressButton_Purple"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onPurpleProgressBtnClicked" />
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn4"
+            style="@style/ProgressButton_Yellow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onYellowProgressBtnClicked" />
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn5"
+            style="@style/ProgressButton_Red"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:onClick="onRedProgressBtnClicked"
+            android:clickable="true" />
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn6"
+            style="@style/ProgressButton_Red_With_Text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onRedWithTextProgressBtnCicked" />
+
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn7"
+            style="@style/ProgressButton_Red_With_Green"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onRedWithGreenProgressBtnClicked" />
+        
+        <com.zk.ProgressButton
+            android:id="@+id/mProgressBtn8"
+            style="@style/ProgressButton_Red_With_Corner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="onRedWithCornerProgressBtnClicked" />
+    </LinearLayout>
+
+</ScrollView>
