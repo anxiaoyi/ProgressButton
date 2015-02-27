@@ -1,5 +1,8 @@
 # ProgressButton
 
+## sample:
+![demo](https://github.com/anxiaoyi/ProgressButton/blob/master/my-demo.png?raw=true)
+
 ## how to use:
 ```java
 <com.zk.ProgressButton
@@ -44,3 +47,6 @@
     <item name="draw_border">true</item>
 </style>
 ```
+
+## download demo apk:
+[DownloadDemoApk](https://github.com/anxiaoyi/ProgressButton/blob/master/ProgressButtonDemo.apk?raw=true)
